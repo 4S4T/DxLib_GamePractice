@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f27a442f-2a4a-4523-87b6-52ee80a01db5}</ProjectGuid>
-    <RootNamespace>ex011</RootNamespace>
+    <ProjectGuid>{515d876c-b786-4b29-aee1-52fd00784b03}</ProjectGuid>
+    <RootNamespace>ex013</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -132,22 +132,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AppMain.cpp" />
-    <ClCompile Include="AppMain_cpp.cpp" />
-    <ClCompile Include="FreamControl_cpp.cpp" />
-    <ClCompile Include="GameClearScene_cpp.cpp" />
-    <ClCompile Include="GameMainScene_cpp.cpp" />
-    <ClCompile Include="GameOverScene_cpp.cpp" />
-    <ClCompile Include="InputControl_cpp.cpp" />
     <ClCompile Include="ソース.cpp" />
-    <ClCompile Include="ソース1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="FreamControl_h.h" />
-    <ClInclude Include="GameCrearScene_h.h" />
-    <ClInclude Include="GameMainScene_h.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
