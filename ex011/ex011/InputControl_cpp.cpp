@@ -133,12 +133,12 @@ int GetNowkey(int key)
 
 **********************************/
 
-int GetKeyflg(int key)
+int GetKeyFlg(int key)
 
 {
 
 	int ret = FALSE;
-	int keyflg = now_button & Å`old_botton;
+	int keyflg = now_button & Å`old_button;
 
 	if ((key & keyflg) != FALSE)
 

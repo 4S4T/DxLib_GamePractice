@@ -70,6 +70,35 @@ void GameOverScene_Update(void)
 
 {
 
-	//ゲームオーバー効果
+	// ゲームオーバー効果音再生チェック
+	if (CheckSoundMem(GameOverSE) == 0) {
+
+		if (GameOverFlag == TRUE) {
+
+			Change_Scene(E_GAME_OVER);
+		}
+		else {
+
+			playSoundMem(GameOverSE, DX_PLAYTYPE);
+			GameOverFlag = TRUE;
+		}
+	}
+
+}
+
+/*******************
+
+*ゲームオーバー画面：描画処理
+* 引数　：なし
+* 戻り値：なし
+* 
+********************/
+
+void GameOverScene_Draw(void)
+
+{
+
+	//ゲームオーバー画面表示
+	DrawGraph(0, 0, GameOverImage, FALSE);
 
 }

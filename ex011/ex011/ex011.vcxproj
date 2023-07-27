@@ -138,6 +138,7 @@
     <ClCompile Include="GameMainScene_cpp.cpp" />
     <ClCompile Include="GameOverScene_cpp.cpp" />
     <ClCompile Include="InputControl_cpp.cpp" />
+    <ClCompile Include="SceneManager_cpp.cpp" />
     <ClCompile Include="ソース.cpp" />
     <ClCompile Include="ソース1.cpp" />
   </ItemGroup>
@@ -148,6 +149,8 @@
     <ClInclude Include="FreamControl_h.h" />
     <ClInclude Include="GameCrearScene_h.h" />
     <ClInclude Include="GameMainScene_h.h" />
+    <ClInclude Include="GameOverScene_h.h" />
+    <ClInclude Include="InputControl_h.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
