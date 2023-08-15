@@ -1,10 +1,3 @@
-/***************************
-
-*プログラミング実習
-* マッチ3ゲームの制作
-
-****************************/
-
 #include "DxLib.h"
 #include "FreamControl.h"
 #include "InputControl.h"
@@ -16,10 +9,11 @@
 
 ****************************/
 
-#define SCREEN_HEIGHT (480)     //スクリーンサイズ（高さ）
-#define SCREEN_WIDTH (640)　　//スクリーンサイズ　（幅）
-#define SCREEN_COLORBIT (32)　//スクリーンカラ－ビット
-#define FONT_SIZE (20)　　　　//文字サイズ
+#define SCREEN_HEIGHT (480)
+#define SCREEN_WIDTH (640)
+#define SCREEN_COLORBIT (32)
+
+#define FONT_SIZE (20)
 
 /***************************
 
@@ -78,7 +72,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	}
 
 	// 描画先画面を裏にする
-	SetdrawScreen(DX_SCREEN_BACK);
+	SetDrawScreen(DX_SCREEN_BACK);
 
 	// 文字サイズを設定
 	SetFontSize(FONT_SIZE);

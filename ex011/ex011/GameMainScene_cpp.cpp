@@ -9,8 +9,8 @@
 
 ******************/
 
-#define TIMELIMIT (3600*3) // 制限時間
-#define NUMBER_IMAGE_MAX (10)　　//数字画像数
+#define TIMELIMIT (3600*3)
+#define NUMBER_IMAGE_MAX (10)
 
 /***************
 
@@ -78,13 +78,13 @@ int GameMainScene_Initialize(void)
 	{
 
 		GameScore = 0;  //スコア初期化
-		GameLevel = 1;  //ゲームレベルの初期化
+		GameLevel = 0;  //ゲームレベルの初期化
 		Set_StageMission(3);  //ミッションの初期化
 		GameCount++;  //次回設定
 	}
-	eles
+	else
 	{
-		GameLevel++;     //ゲームレベルの更新
+		GameLevel ++;		 // ゲームレベルの更新
 		Set_StageMission(3);  //ミッションを増やす
 	}
 	GameTime = TIMELIMIT;
@@ -121,8 +121,8 @@ void GameMainScene_Update(void)
 	case 4:
 		CheckClear();
 		break;
-
-		default:
+	
+	default:
 		break;
 	}
 
@@ -153,7 +153,7 @@ void GameMainScene_Draw(void)
 	int tmp_score = Get_StageScore();
 
 	//ステージを描画
-	StageDrwa();
+	StageDraw();
 
 	//フェードアウト状態か？
 	if (Get_StageState() == 1)

@@ -58,7 +58,7 @@ if (Read_Error == D_ERROR)
 }
 
 //ÉQÅ[ÉÄÉÅÉCÉìâÊñ 
-Read_Error = GamemainScene_Initialize();
+Read_Error = GameMainScene_Initialize();
 if (Read_Error == D_ERROR)
 
 {
@@ -102,7 +102,7 @@ return Read_Error;
 
 *********************/
 
-void Scenemanager_Updata(void)
+void SceneManager_Update(void)
 
 {
 
@@ -120,19 +120,19 @@ void Scenemanager_Updata(void)
 	{
 
 		case E_TITLE:
-		TitleScene_Updata();
+		TitleScene_Update();
 		break;
 
 		case E_GAMEMAIN:
-		GameMainScene_Updata();
+		GameMainScene_Update();
 		break;
 
 		case E_GAME_CLEAR:
-		GameClearScene_Updata();
+		GameClearScene_Update();
 		break;
 
 		case E_GAME_OVER:
-		GameOverScene_Updata();
+		GameOverScene_Update();
 		break;
 
 		default:
@@ -156,19 +156,19 @@ void SceneManager_Draw(void)
 	{
 
 case E_TITLE:
-			TitleScene_Updata();
+			TitleScene_Draw();
 			break;
 
 	case E_GAMEMAIN:
-			GameMainScene_Updata();
+			GameMainScene_Draw();
 			break;
 
 	case E_GAME_CLEAR:
-			GameClearScene_Updata();
+			GameClearScene_Draw();
 			break;
 
 	case E_GAME_OVER:
-			GameOverScene_Updata();
+			GameOverScene_Draw();
 			break;
 
 	default:

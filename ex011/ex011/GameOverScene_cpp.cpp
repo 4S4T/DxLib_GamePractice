@@ -79,7 +79,7 @@ void GameOverScene_Update(void)
 		}
 		else {
 
-			playSoundMem(GameOverSE, DX_PLAYTYPE);
+			PlaySoundMem(GameOverSE, DX_PLAYTYPE_BACK);
 			GameOverFlag = TRUE;
 		}
 	}
@@ -92,8 +92,7 @@ void GameOverScene_Update(void)
 * 引数　：なし
 * 戻り値：なし
 * 
-********************/
-
+**************/
 void GameOverScene_Draw(void)
 
 {

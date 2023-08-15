@@ -131,7 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AppMain_cpp.cpp" />
+    <ClCompile Include="AppMain.cpp" />
     <ClCompile Include="FreamControl_cpp.cpp" />
     <ClCompile Include="GameClearScene_cpp.cpp" />
     <ClCompile Include="GameMainScene_cpp.cpp" />
@@ -147,14 +147,14 @@
     <None Include=".clang-format" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FreamControl_h.h" />
-    <ClInclude Include="GameCrearScene_h.h" />
-    <ClInclude Include="GameMainScene_h.h" />
-    <ClInclude Include="GameOverScene_h.h" />
-    <ClInclude Include="InputControl_h.h" />
-    <ClInclude Include="Scenemanager_h.h" />
-    <ClInclude Include="Stage_h.h" />
-    <ClInclude Include="TitleScene_h.h" />
+    <ClInclude Include="FreamControl.h" />
+    <ClInclude Include="GameClearScene.h" />
+    <ClInclude Include="GameMainScene.h" />
+    <ClInclude Include="GameOverScene.h" />
+    <ClInclude Include="InputControl.h" />
+    <ClInclude Include="Scenemanager.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
