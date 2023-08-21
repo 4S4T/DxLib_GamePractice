@@ -78,14 +78,14 @@ int GameMainScene_Initialize(void)
 	{
 
 		GameScore = 0;  //スコア初期化
-		GameLevel = 0;  //ゲームレベルの初期化
+		GameLevel = 1;  //ゲームレベルの初期化
 		Set_StageMission(3);  //ミッションの初期化
 		GameCount++;  //次回設定
 	}
 	else
 	{
-		GameLevel ++;		 // ゲームレベルの更新
-		Set_StageMission(3);  //ミッションを増やす
+		//GameLevel ++;		 // ゲームレベルの更新
+		//Set_StageMission(3);  //ミッションを増やす
 	}
 	GameTime = TIMELIMIT;
 
@@ -141,7 +141,8 @@ void GameMainScene_Update(void)
 	{
 
 		Change_Scene(E_GAME_CLEAR);
-
+		GameLevel++; // ゲームレベルの更新
+		Set_StageMission(3); // ミッションを増やす
 	}
 }
 
